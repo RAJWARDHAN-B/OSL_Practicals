@@ -28,6 +28,19 @@ show_menu() {
     echo -n "Enter your choice [1-4]: "
 }
 
+search_entry() {
+    read -p "Enter ID or Name or Phone to search: " query
+
+    # Perform case-insensitive search and print results directly
+    if ! grep -i --quiet "$query" "$ADDRESS_BOOK"; then
+        echo "No entries found matching \"$query\"."
+    else
+        echo "Search results (ID ; Name ; Phone):"
+        grep -i "$query" "$ADDRESS_BOOK"
+    fi
+}
+
+
 add_entry() {
     read -p "Enter ID: " id 
 
