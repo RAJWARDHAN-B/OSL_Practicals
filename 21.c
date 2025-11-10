@@ -1,6 +1,12 @@
 // gcc sort_fork.c -o sort_fork
 // ./sort_fork
 
+// to demonstrate on terminal
+
+// ps -el | grep Z
+// ps -ef | grep sort_fork
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
