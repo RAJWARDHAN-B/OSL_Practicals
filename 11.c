@@ -10,7 +10,7 @@
 
 #!/bin/bash
 
-ADDRESS_BOOK = "address.txt"
+ADDRESS_BOOK="address.txt"
 
 if [ ! -f "$ADDRESS_BOOK" ]; then
     touch "$ADDRESS_BOOK"

@@ -1,0 +1,23 @@
+nano address_book.sh
+
+ctrl O
+enter
+ctrl X
+
+chmod +x address_book.sh
+./address_book.sh
+
+
+#!/bin/bash
+
+ADDRESS_BOOK="address_book"
+
+if [ ! -f "$ADDRESS_BOOK" ]; then
+    touch "$ADDRESS_BOOK"
+fi
+
+show_menu() {
+    echo "========================="
+    echo "Adress Book system"
+    echo "========================="
+}
